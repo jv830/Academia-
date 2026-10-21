@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aquino Lopes | Advogados Previdenciários</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1eeea;--paper:#faf8f5;--ink:#17130f;--ink2:#5f5750;--line:#ddd6ce;--bronze:#b08040;--gold:#d9b26a;--red:#d23b35;--dark:#14100d;
+--serif:"Playfair Display",Georgia,"Times New Roman",serif;--sans:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+img{display:block;width:100%;height:auto;border-radius:20px;box-shadow:0 24px 50px -26px rgba(30,20,10,.55)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:14px 24px;font:600 14px var(--sans);border:0;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.red{background:var(--red);color:#fff;box-shadow:0 12px 24px -12px rgba(210,59,53,.7)}.btn.red:hover{background:#b92f2a}
+.btn.white{background:#fff;color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.btn.dark{background:var(--dark);color:#fff;padding:12px 20px}
+.serif,h1 span,h2,.card h3,.list b,.proof strong,.q p{font-family:var(--serif)}
+
+/* stage / hero (estrutura Ref. B, identidade Ref. A) */
+.stage{max-width:1280px;margin:20px auto 0;background:radial-gradient(900px 500px at 20% 0,#fff,transparent),linear-gradient(180deg,#f4f1ed,#fff);border-radius:30px;box-shadow:0 40px 80px -40px rgba(40,30,20,.35);overflow:hidden}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:84px;padding:0 40px}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+.nav ul a{display:block;padding:8px 14px;border-radius:10px;font-size:13px;font-weight:500}
+.nav ul a.on,.nav ul a:hover{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
+.mono{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--bronze);display:grid;place-items:center;color:var(--bronze);font:700 17px var(--serif)}
+.nav .btn{justify-self:end}
+.hero{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;padding:12px 56px 0 40px}
+h1{margin:0;font-weight:500}
+h1 small{display:block;font-size:19px;font-weight:500;margin-bottom:8px}
+h1 span{display:block;font-weight:800;font-size:clamp(56px,8.2vw,112px);line-height:.98;letter-spacing:-.03em}
+h1 em{display:block;font:italic 600 clamp(52px,7.6vw,104px)/1.05 var(--serif);letter-spacing:-.02em;background:linear-gradient(100deg,#8a5a24,#e2bd78 45%,#9a6a2c);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+.hero p{max-width:380px;margin:20px 0 28px;color:var(--ink2);font-size:15px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.fig{position:relative;width:340px}
+.fig img{border-radius:26px}
+.fact{position:absolute;left:-84px;top:70px;width:230px;background:rgba(255,255,255,.96);border-radius:16px;padding:16px 18px;box-shadow:0 18px 40px -16px rgba(40,30,20,.4)}
+.fact small{display:block;font-size:12px;color:var(--ink2)}
+.fact strong{display:block;font:800 40px/1.15 var(--serif)}
+.fact i{display:block;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--bronze),var(--gold));margin-top:10px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:26px 40px 34px}
+.pro{display:flex;align-items:center;gap:14px}
+.pro .m{width:72px;height:72px;border-radius:16px;background:var(--dark);color:var(--gold);display:grid;place-items:center;font:700 34px var(--serif);position:relative}
+.pro .m::after{content:"↗";position:absolute;right:-8px;top:-8px;width:24px;height:24px;border-radius:50%;background:#fff;color:var(--ink);font:600 12px var(--sans);display:grid;place-items:center;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.pro b{display:block;font-size:14px;font-weight:600;text-transform:uppercase;line-height:1.3}
+.pro p{margin:2px 0 6px;font-size:12px;color:var(--ink2)}
+.pro a{font-size:10px;font-weight:700;text-transform:uppercase;border-bottom:1.5px solid var(--red)}
+.soc{display:flex;gap:4px;background:rgba(228,224,220,.9);border-radius:12px;padding:5px}
+.soc a{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;color:#8a8480}.soc a.on{background:var(--dark);color:#fff}
+.soc svg{width:16px;height:16px;fill:currentColor}
+.cl{display:flex;align-items:center;gap:14px;text-align:right}
+.cl b{display:block;font:800 30px/1.1 var(--serif)}.cl small{font-size:12px;color:var(--ink2)}
+.circ{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+
+/* sections */
+section{padding:96px 0}
+h2{font-weight:800;font-size:clamp(34px,4.6vw,56px);line-height:1.06;letter-spacing:-.025em;margin:0 0 16px;max-width:13em}
+.lead{color:var(--ink2);max-width:470px;margin:0}
+.proof{padding:48px 0 0}
+.proof .row{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof .it{padding:30px 24px}.proof .it+.it{border-left:1px solid var(--line)}
+.proof strong{font-size:clamp(36px,4.4vw,56px);font-weight:800;line-height:1;background:linear-gradient(100deg,#8a5a24,#d9b26a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.proof p{margin:8px 0 0;color:var(--ink2);font-size:14px}
+.areas{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:start;margin-top:40px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;min-height:168px;display:flex;flex-direction:column;justify-content:space-between;transition:box-shadow .25s,transform .25s}
+.card:hover{transform:translateY(-3px);box-shadow:0 22px 40px -24px rgba(40,30,20,.45)}
+.card .ic{width:36px;height:2px;background:linear-gradient(90deg,var(--bronze),var(--gold))}
+.card h3{font-size:22px;font-weight:600;margin:22px 0 6px;line-height:1.2}
+.card p{margin:0;font-size:13.5px;color:var(--ink2)}
+.card.dk{background:var(--dark);color:#fff;border-color:var(--dark)}.card.dk p{color:#c9c0b8}
+.areas figure{margin:0;max-width:420px;justify-self:end}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:start;margin-top:48px}
+.gal img:nth-child(2){margin-top:56px}.gal img:nth-child(3){margin-top:18px}.gal img:nth-child(4){margin-top:80px}
+.split{display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center}
+.split figure{margin:0;width:400px}
+.list{list-style:none;margin:30px 0 0;padding:0}
+.list li{padding:20px 0;border-top:1px solid var(--line)}.list li:last-child{border-bottom:1px solid var(--line)}
+.list b{display:block;font-size:21px;font-weight:600}.list span{font-size:14px;color:var(--ink2)}
+.dkS{background:var(--dark);color:#fff;border-radius:30px;max-width:1280px;margin:0 auto}
+.dkS h2{color:#fff}.dkS .lead{color:#c9c0b8}
+.dkg{display:grid;grid-template-columns:1fr auto auto;gap:40px;align-items:start}
+.q{border:1.5px dashed #4a4038;border-radius:20px;padding:26px;margin-top:20px}
+.q p{margin:0 0 14px;font-size:20px;line-height:1.45;color:#d8d0c8}.q small{color:var(--gold);font-size:12px}
+.dkg figure{margin:0}.dkg .a{width:250px}.dkg .b{width:300px;margin-top:48px}
+.dkg img{box-shadow:0 24px 50px -20px rgba(0,0,0,.8)}
+.fin{padding:96px 0}
+.box{background:linear-gradient(120deg,#8f6429,#c79a52 60%,#a97a38);color:#fff;border-radius:30px;padding:56px 56px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.box h2{color:#fff;margin:0}.box p{margin:12px 0 26px;max-width:420px;color:#fbf1de}
+.box figure{margin:0;width:260px}.box img{box-shadow:0 24px 50px -20px rgba(0,0,0,.6)}
+footer{border-top:1px solid var(--line);padding:34px 0 44px;font-size:13px;color:var(--ink2)}
+footer .f{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+@media (prefers-reduced-motion:no-preference){h1,.hero p,.cta,.fig{animation:in .9s ease both}.hero p{animation-delay:.1s}.cta{animation-delay:.2s}.fig{animation-delay:.15s}@keyframes in{from{opacity:0}}}
+
+/* ===== v5: imagens grandes, vida e fonte marcante ===== */
+.stage{position:relative}
+.stage>*{position:relative;z-index:1}
+.stage::before{content:"";position:absolute;z-index:0;inset:-60px;background:var(--bgimg,none) 88% center/auto 125% no-repeat;filter:blur(48px) saturate(1.3);opacity:.55;pointer-events:none}
+.stage::after{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(90deg,#f6f3ef 6%,rgba(246,243,239,.6) 52%,rgba(246,243,239,0));pointer-events:none}
+img{filter:saturate(1.1) contrast(1.05);box-shadow:0 36px 70px -30px rgba(120,80,30,.6)}
+.hero{grid-template-columns:1fr 470px;padding:8px 56px 0 40px}
+.fig{width:470px}
+.fact{left:-100px;top:90px;width:240px}
+h1 small{font-size:21px;font-weight:600}
+h1 span{font-weight:900;font-size:clamp(60px,9.4vw,136px);letter-spacing:-.04em;line-height:.94}
+h1 em{font-size:clamp(56px,8.6vw,124px);font-weight:700}
+h2{font-weight:900;letter-spacing:-.03em}
+.proof strong,.cl b,.fact strong{font-weight:900}
+.areas{grid-template-columns:1fr 440px;align-items:stretch}
+.cards{grid-auto-rows:1fr}
+.areas figure{max-width:none;width:440px;justify-self:end}
+.gal{display:flex;gap:20px;align-items:flex-start}
+.gal img{flex:var(--r,1) 1 0;min-width:0;width:auto;margin-top:0!important}
+.split{grid-template-columns:1fr 460px}.split figure{width:460px}
+.dkg{grid-template-columns:1fr 640px;align-items:center}
+.pair{display:flex;gap:20px;align-items:flex-start}
+.pair img{flex:var(--r,1) 1 0;min-width:0;width:auto}
+.box{grid-template-columns:1fr 340px}.box figure{width:340px}
+.row2{display:grid;grid-template-columns:460px 1fr;gap:72px;align-items:center;margin-top:72px}
+.row2.rev{grid-template-columns:1fr 460px}.row2.rev figure{order:2}.row2 figure{margin:0}
+.row2 .tx h3{font:900 clamp(30px,3.6vw,46px)/1.08 var(--serif);letter-spacing:-.025em;margin:0 0 16px;max-width:12em}
+.row2 .tx h3::before{content:"";display:block;width:48px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--bronze),var(--gold));margin-bottom:22px}
+.row2 .tx>p{margin:0;max-width:440px;color:var(--ink2);font-size:16px;line-height:1.7}
+.dkS .row2:first-child{margin-top:0}.dkS .tx>p{color:#c9c0b8}.dkS .tx h3{color:#fff}
+@media (max-width:1060px){
+  .hero{grid-template-columns:1fr;padding:8px 28px 0;gap:36px}
+  .fig{width:min(100%,430px);margin:0 auto}.fact{left:-12px;top:auto;bottom:24px;width:210px}
+  .bar{justify-content:center;gap:28px}
+  .areas,.split,.dkg,.box{grid-template-columns:1fr}
+  .areas figure,.split figure,.box figure{justify-self:center;width:min(100%,380px)}
+  .dkg .a,.dkg .b{width:min(100%,320px)}.dkg .b{margin-top:0}
+  .dkg{justify-items:start}
+  .gal{grid-template-columns:1fr 1fr}.gal img:nth-child(n){margin-top:0}.gal img:nth-child(even){margin-top:36px}
+  section{padding:72px 0}.dkS{margin:0 10px}
+}
+@media (max-width:640px){
+  .stage{margin:10px;border-radius:24px}
+  .nav{padding:0 18px;grid-template-columns:1fr auto}.nav ul{display:none}
+  .wrap{padding:0 18px}.hero{padding:4px 20px 0}.bar{padding:24px 20px 28px}
+  .cards{grid-template-columns:1fr}
+  .proof .row{grid-template-columns:1fr}.proof .it+.it{border-left:0;border-top:1px solid var(--line)}
+  .box{padding:36px 24px}
+}
+@media (max-width:1060px){.gal{display:grid;grid-template-columns:1fr 1fr}.gal img{width:100%}.pair{max-width:640px}.dkg{grid-template-columns:1fr}}
+@media (max-width:640px){h1 span{font-size:62px}h1 em{font-size:58px}.fact{left:8px}}
+@media (max-width:1060px){.row2,.row2.rev{grid-template-columns:1fr;gap:30px;margin-top:56px}.row2 figure,.row2.rev figure{order:-1;width:min(100%,440px);justify-self:center}}
+
+::selection{background:var(--gold);color:var(--dark)}
+.prog{position:fixed;top:0;left:0;right:0;height:3px;z-index:60;background:linear-gradient(90deg,var(--bronze),var(--gold));transform:scaleX(0);transform-origin:0 50%}
+.card .ic{transition:width .35s ease}.card:hover .ic{width:68px}
+.btn.red span{display:inline-block;transition:transform .2s}.btn:hover span{transform:translateX(3px)}
+figure img{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+figure:hover img{transform:translateY(-5px);box-shadow:0 44px 80px -30px rgba(120,80,30,.7)}
+@media (prefers-reduced-motion:no-preference){
+  h1 em{background-size:220% 100%;animation:shine 9s ease-in-out infinite alternate}
+  @keyframes shine{from{background-position:0 0}to{background-position:100% 0}}
+  .fact{animation:fl 6s ease-in-out infinite}
+  @keyframes fl{50%{transform:translateY(-6px)}}
+  .fig img{animation:zoom 1.6s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes zoom{from{transform:scale(1.05);opacity:0}}
+  .js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .js figure.rv img{will-change:transform}
+}
+</style></head>
+<body>
+<div class="prog" aria-hidden="true"></div>
+<div class="stage">
+  <header class="nav">
+    <ul><li><a href="#inicio" class="on">Início</a></li><li><a href="#escritorio">Sobre</a></li><li><a href="#areas">Áreas de atuação ▾</a></li></ul>
+    <a class="logo" href="#inicio" aria-label="Aquino Lopes Advogados"><span class="mono">A</span>Aquino Lopes</a>
+    <a class="btn dark" href="#contato">Fale conosco</a>
+  </header>
+  <div class="hero" id="inicio">
+    <div>
+      <h1><small>Decisões importantes exigem</small><span>Estratégia</span><em>jurídica.</em></h1>
+      <p>Advogados previdenciários em benefícios do INSS e direitos trabalhistas, com atendimento próximo e presença em todo o Brasil.</p>
+      <div class="cta"><a class="btn red" href="#contato" data-wa>Começar agora <span>→</span></a><a class="btn white" href="#areas">Saiba mais</a></div>
+    </div>
+    <figure class="fig" style="margin:0">
+      <img src="imagens/01-hero-temis.jpg" alt="Têmis em mármore segurando uma balança dourada" width="675" height="1200">
+      <div class="fact"><small>Experiência</small><strong><span data-count="40">40</span> anos</strong><small>de atuação em direito previdenciário</small><i></i></div>
+    </figure>
+  </div>
+  <div class="bar">
+    <div class="pro"><div class="m">A</div><div><b>Seus direitos<br>são nossa missão</b><p>Foco em você, base na lei.</p><a href="#escritorio">Mais detalhes</a></div></div>
+    <div class="soc" aria-label="Redes sociais">
+      <a class="on" href="https://instagram.com/aquinolopesadvogados" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.2 6a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.7.3-1 1-1h2V2h-3c-3 0-4.5 1.8-4.5 4.5V8H7v3.5h2.5V22H14V11.5h2.7L17 8h-3z"/></svg></a>
+      <a href="#" data-wa aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 2a8 8 0 11-4.2 14.8l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0112 4zM9 8c-.3 0-.7.3-.9.8-.3.8 0 1.8.8 2.9 1.2 1.8 2.7 3 4.4 3.5.6.2 1.4.1 1.8-.5l.3-.8-1.8-.9-.7.7c-1-.4-2-1.3-2.5-2.4l.7-.8L9 8z"/></svg></a>
+    </div>
+    <div class="cl"><div><b>Milhares</b><small>de clientes atendidos</small></div><a class="circ" href="#areas" aria-label="Ver áreas">↗</a></div>
+  </div>
+</div>
+
+<main>
+<div class="proof"><div class="wrap"><div class="row">
+  <div class="it rv"><strong><span data-count="40">40</span> anos</strong><p>de experiência</p></div>
+  <div class="it rv"><strong>Milhares</strong><p>de clientes atendidos</p></div>
+  <div class="it rv"><strong>Nacional</strong><p>presença em todo o Brasil</p></div>
+</div></div></div>
+
+<section id="areas"><div class="wrap">
+  <h2>Áreas de atuação</h2>
+  <p class="lead">Cada caso tem regras próprias. Analisamos o seu com clareza antes de qualquer decisão.</p>
+  <div class="areas">
+    <div class="cards">
+      <article class="rv card dk"><div class="ic"></div><div><h3>Benefícios do INSS</h3><p>Aposentadorias, pensões, auxílios e revisões.</p></div></article>
+      <article class="rv card"><div class="ic"></div><div><h3>Direitos trabalhistas</h3><p>Orientação e defesa nas relações de trabalho.</p></div></article>
+      <article class="rv card"><div class="ic"></div><div><h3>Consumidor</h3><p>Defesa dos seus direitos nas relações de consumo.</p></div></article>
+      <article class="rv card"><div class="ic"></div><div><h3>Direito médico</h3><p>Apoio jurídico em questões de saúde.</p></div></article>
+      <article class="rv card"><div class="ic"></div><div><h3>Família</h3><p>Orientação em questões familiares e sucessórias.</p></div></article>
+      <article class="rv card"><div class="ic"></div><div><h3>Aposentadoria da pessoa com deficiência</h3><p>Por idade ou por tempo de contribuição.</p></div></article>
+    </div>
+    <figure class="rv"><img src="imagens/02-fachada.jpg" alt="Fachada de tribunal com colunas" width="732" height="1114"></figure>
+  </div>
+</div></section>
+
+<section id="escritorio" style="padding-top:24px"><div class="wrap">
+  <h2>Tradição que inspira confiança.</h2>
+  <p class="lead">Quatro décadas dedicadas a explicar seus direitos e conduzir cada etapa com segurança.</p>
+  <div class="row2"><figure class="rv"><img src="imagens/03-balanca.jpg" alt="Balança sobre livros jurídicos" width="736" height="1308"></figure><div class="tx rv"><h3>Equilíbrio em cada análise.</h3><p>Antes de qualquer decisão, pesamos fatos, prazos e regras do INSS para indicar o caminho mais seguro para o seu caso.</p></div></div><div class="row2 rev"><figure class="rv"><img src="imagens/04-martelo.jpg" alt="Martelo e livro aberto" width="736" height="1195"></figure><div class="tx rv"><h3>Rigor técnico, do início ao fim.</h3><p>Cada benefício, revisão ou direito trabalhista é estudado à luz da lei, com a clareza que você precisa para decidir.</p></div></div><div class="row2"><figure class="rv"><img src="imagens/05-advogado.jpg" alt="Advogado assinando documento" width="735" height="1187"></figure><div class="tx rv"><h3>Cada documento, com atenção.</h3><p>Requerimentos, petições e contratos são conferidos com cuidado, para que nada importante fique para trás.</p></div></div><div class="row2 rev"><figure class="rv"><img src="imagens/06-livros.jpg" alt="Livros jurídicos e martelo" width="620" height="790"></figure><div class="tx rv"><h3>Conhecimento construído na prática.</h3><p>Quarenta anos de atuação em direito previdenciário fazem parte de cada orientação que damos.</p></div></div>
+</div></section>
+
+<section><div class="wrap split">
+  <div>
+    <h2>Estratégia, clareza e atendimento próximo.</h2>
+    <p class="lead">Análise individual de cada caso, sem promessas de resultado.</p>
+    <ul class="list">
+      <li><b>Experiência de 40 anos</b><span>Tradição construída no direito previdenciário.</span></li>
+      <li><b>Presença nacional</b><span>Atendimento para clientes em todo o Brasil.</span></li>
+      <li><b>Orientação segura</b><span>Cada etapa explicada com clareza.</span></li>
+    </ul>
+  </div>
+  <figure class="rv"><img src="imagens/07-estatua-1.jpg" alt="Estátua da Justiça sentada, de olhos vendados" width="736" height="1104"></figure>
+</div></section>
+
+<section class="dkS"><div class="wrap">
+  <div class="row2"><figure class="rv"><img src="imagens/08-bordado.jpg" alt="Bordado com balança e a palavra Direito" width="736" height="981"></figure><div class="tx rv"><h3>Direito é compromisso.</h3><p>Atuamos com ética e responsabilidade em cada caso, do primeiro atendimento até a conclusão do processo.</p></div></div>
+  <div class="row2 rev"><div class="tx rv"><h3>Quem confia no escritório.</h3><p>Espaço para depoimentos reais de clientes.</p>
+    <div class="q"><p>[Depoimento real do cliente — editar aqui]</p><small>[Nome do cliente]</small></div>
+    <div class="q"><p>[Depoimento real do cliente — editar aqui]</p><small>[Nome do cliente]</small></div></div><figure class="rv"><img src="imagens/09-estatua-2.jpg" alt="Estátua da Justiça contra o céu" width="736" height="1308"></figure></div>
+</div></section>
+
+<div class="fin" id="contato"><div class="wrap"><div class="box">
+  <div><h2>Fale com quem entende do seu caso.</h2><p>Converse com nossa equipe e entenda quais são os seus caminhos.</p><a class="btn dark" href="#" data-wa>Chamar no WhatsApp</a></div>
+  <figure class="rv"><img src="imagens/10-maos.jpg" alt="Mão segurando um martelo de juiz" width="468" height="602"></figure>
+</div></div></div>
+</main>
+
+<footer><div class="wrap f">
+  <a class="logo" href="#inicio"><span class="mono">A</span>Aquino Lopes</a>
+  <span>Fixo: (11) 2362-0162 · @aquinolopesadvogados</span>
+  <span>Advogados Previdenciários · Presença nacional</span>
+</div></footer>
+<script>
+// Para ativar o WhatsApp, informe o número (ex.: 5511999999999)
+var WHATSAPP="";
+var hi=document.querySelector(".fig img");if(hi)document.querySelector(".stage").style.setProperty("--bgimg","url("+hi.src+")");
+document.querySelectorAll("[data-wa]").forEach(function(a){if(WHATSAPP)a.href="https://wa.me/"+WHATSAPP});
+
+// movimentos mínimos
+(function(){
+  var rm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var bar=document.querySelector(".prog"),fig=document.querySelector(".fig"),tk=false;
+  function onScroll(){
+    var y=window.scrollY,h=document.documentElement.scrollHeight-innerHeight;
+    if(bar)bar.style.transform="scaleX("+(h>0?Math.min(y/h,1):0)+")";
+    if(fig&&!rm&&y<900)fig.style.transform="translateY("+(y*.05).toFixed(1)+"px)";
+    tk=false;
+  }
+  addEventListener("scroll",function(){if(!tk){tk=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+  function count(el){
+    var to=+el.dataset.count,t0=null;
+    if(rm){el.textContent=to;return}
+    (function f(t){if(!t0)t0=t;var k=Math.min((t-t0)/1300,1);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(performance.now());
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    var el=e.target;el.classList.add("in");
+    el.querySelectorAll("[data-count]").forEach(count);
+    io.unobserve(el);
+  })},{threshold:.15,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll(".rv").forEach(function(el,i){
+    var sib=Array.prototype.indexOf.call(el.parentNode.children,el);
+    el.style.transitionDelay=(el.classList.contains("card")||el.classList.contains("it")?sib*70:el.classList.contains("tx")?120:0)+"ms";
+    io.observe(el);
+  });
+  document.querySelectorAll(".fact [data-count]").forEach(count);
+})();
+</script>
+</body></html>
